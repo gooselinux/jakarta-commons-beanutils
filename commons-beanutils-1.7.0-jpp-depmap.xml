@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<depset>
+<!--
+   <dependency>
+      <maven>
+         <groupId>commons-beanutils</groupId>
+         <artifactId>commons-beanutils</artifactId>
+         <version>1.6</version>
+      </maven>
+      <jpp>
+         <groupId>JPP</groupId>
+         <artifactId>commons-beanutils</artifactId>
+         <jar>commons-beanutils.jar</jar>
+         <version>1.6</version>
+      </jpp>
+   </dependency>
+-->
+   <dependency>
+      <maven>
+         <groupId>commons-collections</groupId>
+         <artifactId>commons-collections</artifactId>
+         <version>3.0</version>
+      </maven>
+      <jpp>
+         <groupId>JPP</groupId>
+         <artifactId>commons-collections</artifactId>
+         <jar>commons-collections.jar</jar>
+         <version>3.0</version>
+      </jpp>
+   </dependency>
+   <dependency>
+      <maven>
+         <groupId>commons-collections</groupId>
+         <artifactId>commons-collections-testframework</artifactId>
+         <version>SNAPSHOT</version>
+      </maven>
+      <jpp>
+         <groupId>JPP</groupId>
+         <artifactId>commons-collections-testframework</artifactId>
+         <jar>commons-collections-testframework.jar</jar>
+         <version>SNAPSHOT</version>
+      </jpp>
+   </dependency>
+   <dependency>
+      <maven>
+         <groupId>commons-logging</groupId>
+         <artifactId>commons-logging</artifactId>
+         <version>1.0.3</version>
+      </maven>
+      <jpp>
+         <groupId>JPP</groupId>
+         <artifactId>commons-logging</artifactId>
+         <jar>commons-logging.jar</jar>
+         <version>1.0.3</version>
+      </jpp>
+   </dependency>
+</depset>

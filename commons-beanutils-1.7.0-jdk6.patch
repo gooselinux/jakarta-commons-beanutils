@@ -1,0 +1,233 @@
+--- commons-beanutils-1.7.0-src/src/test/org/apache/commons/beanutils/TestResultSet.java.orig	2004-02-28 08:18:36.000000000 -0500
++++ commons-beanutils-1.7.0-src/src/test/org/apache/commons/beanutils/TestResultSet.java	2008-09-19 11:28:22.000000000 -0400
+@@ -34,6 +34,9 @@
+ import java.sql.Statement;
+ import java.sql.Time;
+ import java.sql.Timestamp;
++import java.sql.RowId;
++import java.sql.NClob;
++import java.sql.SQLXML;
+ import java.util.Calendar;
+ import java.util.Map;
+ 
+@@ -860,5 +863,204 @@
+         throw new UnsupportedOperationException();
+     }
+ 
++    // new method for JDK6
++    public RowId getRowId(int columnIndex) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public RowId getRowId(String columnLabel) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateRowId(int columnIndex, RowId x) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateRowId(String columnLabel, RowId x) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public int getHoldability() throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public boolean isClosed() throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateNString(int columnIndex, String nString) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateNString(String columnLabel, String nString) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateNClob(int columnIndex, NClob nClob) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateNClob(String columnLabel, NClob nClob) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public NClob getNClob(int columnIndex) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public NClob getNClob(String columnLabel) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public SQLXML getSQLXML(int columnIndex) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public SQLXML getSQLXML(String columnLabel) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateSQLXML(int columnIndex, SQLXML xmlObject) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateSQLXML(String columnLabel, SQLXML xmlObject) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public String getNString(int columnIndex) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public String getNString(String columnLabel) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public Reader getNCharacterStream(int columnIndex) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public Reader getNCharacterStream(String columnLabel) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateNCharacterStream(int columnIndex, Reader x, long length) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateNCharacterStream(String columnLabel, Reader reader, long length) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateAsciiStream(int columnIndex, InputStream x, long length) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateBinaryStream(int columnIndex, InputStream x, long length) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateCharacterStream(int columnIndex, Reader x, long length) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
+ 
++    public void updateAsciiStream(String columnLabel, InputStream x, long length) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateBinaryStream(String columnLabel, InputStream x, long length) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateCharacterStream(String columnLabel, Reader reader, long length) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateBlob(int columnIndex, InputStream inputStream, long length) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateBlob(String columnLabel, InputStream inputStream, long length) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateClob(int columnIndex, Reader reader, long length) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateClob(String columnLabel, Reader reader, long length) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateNClob(int columnIndex, Reader reader, long length) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateNClob(String columnLabel, Reader reader, long length) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateNCharacterStream(int columnIndex, Reader x) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateNCharacterStream(String columnLabel, Reader reader) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateAsciiStream(int columnIndex, InputStream x) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateBinaryStream(int columnIndex, InputStream x) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateCharacterStream(int columnIndex, Reader x) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateAsciiStream(String columnLabel, InputStream x) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateBinaryStream(String columnLabel, InputStream x) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateCharacterStream(String columnLabel, Reader reader) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateBlob(int columnIndex, InputStream inputStream) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateBlob(String columnLabel, InputStream inputStream) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateClob(int columnIndex, Reader reader) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateClob(String columnLabel, Reader reader) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateNClob(int columnIndex, Reader reader) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public void updateNClob(String columnLabel, Reader reader) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public <T> T unwrap(Class<T> iface) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public boolean isWrapperFor(Class<?> iface) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
+ }
+--- commons-beanutils-1.7.0-src/src/test/org/apache/commons/beanutils/TestResultSetMetaData.java.orig	2004-02-28 08:18:36.000000000 -0500
++++ commons-beanutils-1.7.0-src/src/test/org/apache/commons/beanutils/TestResultSetMetaData.java	2008-09-19 11:15:04.000000000 -0400
+@@ -166,5 +166,13 @@
+         throw new UnsupportedOperationException();
+     }
+ 
++    // new methods for JDK6
+ 
++    public <T> T unwrap(Class<T> iface) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
++
++    public boolean isWrapperFor(Class<?> iface) throws SQLException {
++        throw new UnsupportedOperationException();
++    }
+ }

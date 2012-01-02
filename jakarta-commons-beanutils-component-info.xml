@@ -1,0 +1,15 @@
+<project name="apache-commons-beanutils">
+   <component id="apache-beanutils"
+              licenseType="apache-2.0"
+              version="@VERSION@"
+              projectHome="http://jakarta.apache.org/commons/beanutils/"
+              description="Jakarta Commons BeanUtils Package"
+              scm=":ext:cvs.devel.redhat.com:/cvs/dist/jakarta-commons-beanutils"
+              tag="@TAG@">
+      <!-- Built using JDK 1.4 -->
+      <artifact id="commons-beanutils.jar"/>
+      <export>
+         <include input="commons-beanutils.jar"/>
+      </export>
+   </component>
+</project>

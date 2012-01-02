@@ -1,0 +1,11 @@
+--- ./src/test/org/apache/commons/beanutils/locale/LocaleBeanificationTestCase.java.sav	2007-07-24 13:50:13.000000000 +0200
++++ ./src/test/org/apache/commons/beanutils/locale/LocaleBeanificationTestCase.java	2007-07-24 13:50:50.000000000 +0200
+@@ -100,7 +100,7 @@
+     public void testMemoryTestMethodology() throws Exception {
+         // test methodology
+         // many thanks to Juozas Baliuka for suggesting this method
+-        ClassLoader loader = new ClassLoader() {};
++        ClassLoader loader = new ClassLoader(this.getClass().getClassLoader()) {};
+         WeakReference reference = new  WeakReference(loader);
+         Class myClass = loader.loadClass("org.apache.commons.beanutils.BetaBean");
+         

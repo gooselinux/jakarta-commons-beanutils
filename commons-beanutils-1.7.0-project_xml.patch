@@ -1,0 +1,29 @@
+--- project.xml.sav	2004-07-27 23:40:14.000000000 +0200
++++ project.xml	2007-07-24 13:52:05.000000000 +0200
+@@ -155,7 +155,7 @@
+ 
+     	<!-- Unit test classes -->
+     	<unitTest>
+-	      	<includes>
++	    <includes>
+ 	        	<include>**/*TestCase.java</include>
+             </includes>
+             <resources>
+@@ -168,15 +168,13 @@
+             </resources>
+    		</unitTest>
+ 
+-    	<!-- Integration unit test classes -->
+-    	<integrationUnitTestPatterns></integrationUnitTestPatterns>
+-    
+     	<resources>
++    	    <resource>
+       		<includes>
+        			<include>**/*.properties</include>
+       		</includes>
++    	    </resource>
+     	</resources>
+-    	<jars/>
+   	</build>
+ 
+   <reports>
